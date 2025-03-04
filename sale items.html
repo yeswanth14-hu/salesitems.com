@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sales items.com</title>
+  <style>
+  nav{
+     width:100%;
+    background-color: #53698f;
+    color:#fff;
+    align-content: center;
+    padding: 0px 0px;
+    position: fixed;
+    right: 1px;
+    top:10px;
+    height:50px;
+    z-index: 1;  
+  }
+  h3{
+      text-align:center;
+  }
+  .sub-items{
+    position:relative;
+    width: 97%; /* Width of the box */
+    height: 200px;
+    border: 2px solid #2980b9; /* Border color and thickness */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-align: center; 
+    align-items:center;
+    color: white; /* Text color */
+    font-size: 20px; /* Text size */
+    font-family: Arial, sans-serif; /* Font style */
+    top:70px;
+}
+ .image-box {
+    
+    height: 180px;
+   object-fit: cover;
+   position:absolute;
+   left:1px;
+   top:10px;
+   bottom:10px;
+}
+   .vertical-bar {
+            width: 1px;
+      position:absolute;
+            height: 150px;
+            left:105px;
+            top:10px;
+            background-color: black;
+            margin: 20px;
+        }
+   .price{
+      position:absolute; 
+      left:135px;
+      width:57%;
+      height:95%;
+      top:0px;
+      font-size:30px;
+      color:black;
+      
+   }
+   .content{
+        position:absolute; 
+      left:135px;
+      width:57%;
+      height:95%;
+      top:73px;
+      font-size:10px;
+      color:black;
+   }
+   .img{
+      height:10vh;
+      width:100%vh;
+   }
+  </style>
+</head>
+<body>
+  <nav>
+    <h3> SALE ITEMS</h3>
+  </nav> 
+  <hr><br>
+  <div class="items">
+    <div class="sub-items" onclick="redirect('https://amzn.in/d/1dHPTXL')">
+      <img src="watch.jpg" alt="My Image" class="image-box">
+       <div class="vertical-bar"></div>
+       <div class="price">₹16990/- </div>
+       <br> <div class="content">OnePlus Watch 2R with Wear OS 4 by Google,Snapdragon W5 Chipset,Upto 100hrs Battery Life,1.43’’ AMOLED Display,100+ Sports Mode,Dual Frequency GPS,5 ATM,IP68 & BT Calling [Gunmetal Gray]</div>
+    </div> <br>
+      <div class="sub-items" onclick="redirect('')">
+      <img class="img" src=".jpg" alt="My Image" class="image-box">
+       <div class="vertical-bar"></div>
+      <div class="content"> TOP JEANS FOR GIRLS</div>
+    </div>
+  
+  </div>
+   <script>
+   function redirect(url){
+      window.location.href = url;
+   }
+   
+   </script>
+</body>
+</html>
